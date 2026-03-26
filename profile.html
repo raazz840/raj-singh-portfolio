@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raj Singh | AI & ML Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color:#fff;
+      scroll-behavior:smooth;
+    }
+
+    header {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:20px 50px;
+      background:rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      position:sticky; top:0; z-index:100;
+    }
+
+    header h1 {
+      background: linear-gradient(45deg, #ff4d4d, #facc15);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav a { margin-left:20px; color:#fff; text-decoration:none; }
+    nav a:hover { color:#facc15; }
+
+    .hero {
+      display:flex; align-items:center; justify-content:space-between;
+      padding:100px 50px;
+    }
+
+    .hero-text h2 {
+      font-size:50px;
+      background: linear-gradient(45deg, #ff4d4d, #facc15);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-text p { margin:20px 0; color:#e2e8f0; }
+
+    .typing { color:#facc15; font-weight:600; }
+
+    .btn {
+      padding:12px 25px;
+      background: linear-gradient(45deg, #ff4d4d, #facc15);
+      color:#000;
+      border:none;
+      border-radius:30px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    .hero img {
+      width:300px; height:370px; object-fit:cover;
+      border-radius:20px;
+      box-shadow:0 0 30px rgba(255,77,77,0.5);
+    }
+
+    section { padding:70px 50px; }
+
+    .section-title {
+      font-size:30px;
+      margin-bottom:30px;
+      background: linear-gradient(45deg, #ff4d4d, #facc15);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .skills .bar { margin:20px 0; }
+
+    .progress {
+      height:10px;
+      background:#1e293b;
+      border-radius:20px;
+      overflow:hidden;
+    }
+
+    .progress div {
+      height:10px;
+      background: linear-gradient(45deg, #ff4d4d, #facc15);
+    }
+
+    .card-container {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card {
+      background:rgba(255,255,255,0.05);
+      padding:25px;
+      border-radius:15px;
+      backdrop-filter: blur(10px);
+      transition:0.3s;
+      border:1px solid rgba(255,255,255,0.1);
+    }
+
+    .card:hover {
+      transform:translateY(-10px) scale(1.03);
+      box-shadow:0 0 25px rgba(255,77,77,0.4);
+    }
+
+    footer {
+      text-align:center;
+      padding:20px;
+      background:rgba(255,255,255,0.05);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Raj Singh</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Hello, I'm Raj Singh</h2>
+    <p>I am a <span class="typing">AI & ML Student</span></p>
+    <p>BCA (AI & ML) student from <strong>Babu Banarasi Das University</strong>.</p>
+    <button class="btn">Download Resume</button>
+  </div>
+
+  <!-- FIX IMAGE ISSUE:
+Rename your image to: profile.jpg
+Keep it in same folder as index.html
+-->
+<img src="profile.jpg" alt="Raj Singh">
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p>I am passionate about Artificial Intelligence, Machine Learning, and Web Development. I enjoy building modern and responsive websites and continuously learning new technologies.</p>
+</section>
+
+<section id="skills" class="skills">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="bar">
+    <span>Python</span>
+    <div class="progress"><div style="width:80%"></div></div>
+  </div>
+
+  <div class="bar">
+    <span>HTML & CSS</span>
+    <div class="progress"><div style="width:85%"></div></div>
+  </div>
+
+  <div class="bar">
+    <span>Machine Learning</span>
+    <div class="progress"><div style="width:70%"></div></div>
+  </div>
+
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>AI Project</h3>
+      <p>Machine learning model for prediction tasks.</p>
+    </div>
+    <div class="card">
+      <h3>Web Portfolio</h3>
+      <p>Modern responsive portfolio website.</p>
+    </div>
+    <div class="card">
+      <h3>Cloud Project</h3>
+      <p>Worked with IBM Cloud & APIs.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <p>Email: rajrrajput840@gmail.com</p>
+</section>
+
+<footer>
+  <p>© 2026 Raj Singh | All Rights Reserved</p>
+</footer>
+
+<script>
+const text = ["AI & ML Student", "Web Developer", "Python Learner"];
+let count = 0;
+let index = 0;
+let currentText = '';
+let letter = '';
+(function type(){
+  if(count === text.length) count = 0;
+  currentText = text[count];
+  letter = currentText.slice(0, ++index);
+  document.querySelector('.typing').textContent = letter;
+  if(letter.length === currentText.length){
+    count++;
+    index = 0;
+    setTimeout(type, 1000);
+  } else {
+    setTimeout(type, 100);
+  }
+})();
+</script>
+
+</body>
+</html>
